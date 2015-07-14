@@ -2,9 +2,11 @@
 # Initialize Bash It
 
 # Reload Library
+export BASH_IT_LINUX=true
 case $OSTYPE in
-  darwin*)
+  msys*)
     alias reload='source ~/.bash_profile'
+    BASH_IT_LINUX=false
     ;;
   *)
     alias reload='source ~/.bashrc'
@@ -35,8 +37,8 @@ source "${BASH_IT}/lib/composure.bash"
 cite _about _param _example _group _author _version
 
 # Load colors first so they can be use in base theme
-source "${BASH_IT}/themes/colors.theme.bash"
-source "${BASH_IT}/themes/base.theme.bash"
+source "${BASH_IT}/themes/hiephm.colors.theme.bash"
+source "${BASH_IT}/themes/hiephm.base.theme.bash"
 
 # library
 LIB="${BASH_IT}/lib/*.bash"

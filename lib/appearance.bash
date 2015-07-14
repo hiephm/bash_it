@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 # colored grep
-alias grep='grep --color=auto'
-export GREP_COLOR='1;33'
+if [[ "$BASH_IT_LINUX" = true ]]; then
+  alias grep='grep --color=auto'
+  export GREP_COLOR='1;33'
+fi
 
 # colored ls
 export LSCOLORS='Gxfxcxdxdxegedabagacad'

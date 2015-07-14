@@ -370,7 +370,7 @@ then
     example 'pathmunge /path/to/dir is equivalent to PATH=/path/to/dir:$PATH'
     example 'pathmunge /path/to/dir after is equivalent to PATH=$PATH:/path/to/dir'
 
-    if ! [[ $PATH =~ (^|:)$1($|:) ]] ; then
+    if ! echo "$PATH" | grep -E "(^|:)$1($|:)" > /dev/null; then
       if [ "$2" = "after" ] ; then
         export PATH=$PATH:$1
       else

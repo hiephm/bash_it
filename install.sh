@@ -2,7 +2,7 @@
 BASH_IT="$HOME/.bash_it"
 
 case $OSTYPE in
-  darwin*)
+  msys*)
     CONFIG_FILE=.bash_profile
     ;;
   *)
@@ -48,7 +48,7 @@ function load_all() {
       [ ${filename:0:1} = "_" ] && continue
       dest="${BASH_IT}/${file_type}/enabled/${filename}"
       if [ ! -e "${dest}" ]; then
-          ln -s "../available/${filename}" "${dest}"
+          cp "${src}" "${dest}"
       else
           echo "File ${dest} exists, skipping"
       fi
@@ -66,7 +66,7 @@ function load_some() {
       read -e -n 1 -p "Would you like to enable the ${file_name%%.*} $file_type? [y/N] " RESP
       case $RESP in
       [yY])
-        ln -s "../available/${file_name}" "$BASH_IT/$file_type/enabled"
+        cp "$path" "$BASH_IT/$file_type/enabled"
         break
         ;;
       [nN]|"")
