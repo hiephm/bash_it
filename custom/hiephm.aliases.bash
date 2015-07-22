@@ -12,9 +12,16 @@ alias gau="git add . && git status"
 alias gaa="git add -A && git status"
 alias gc="git commit -m"
 alias gfa="git fetch --all"
-
+alias gps="git push"
+alias gpl="git pull"
 alias gk="gitk &"
 alias gkall="gitk --all &"
+
+### Vagrant
+alias v="vagrant"
+alias vup="vagrant up"
+alias vssh="vagrant ssh"
+alias vsus="vagrant suspend"
 
 ### Tool
 alias edit="notepad++.exe"
