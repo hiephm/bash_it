@@ -29,4 +29,4 @@ alias composer="composer.phar"
 
 ### Remote
 alias dev="ssh hiephm@dev"
-
+alias snkr="ssh banksgroupsnkrtest@ced1.smartosc.com"
