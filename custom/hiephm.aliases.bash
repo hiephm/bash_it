@@ -25,8 +25,12 @@ alias vsus="vagrant suspend"
 
 ### Tool
 alias edit="notepad++.exe"
+alias editalias="edit ~/.bash_it/custom/hiephm.aliases.bash &"
 alias composer="composer.phar"
+alias sync="syncthing.exe"
 
 ### Remote
 alias dev="ssh hiephm@dev"
-alias snkr="ssh banksgroupsnkrtest@ced1.smartosc.com"
+alias snkrdev="ssh banksgroupsnkr@ced1.smartosc.com"
+alias snkrtest="ssh banksgroupsnkrtest@ced1.smartosc.com"
+alias jira="ssh root@jira.smartosc.com"

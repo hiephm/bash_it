@@ -13,7 +13,7 @@ RVM_THEME_PROMPT_PREFIX="|"
 RVM_THEME_PROMPT_SUFFIX="|"
 
 function prompt_command() {
-    PS1="\n${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}${green}$(git_prompt_info) ${green}→${reset_color} "
+    PS1="\n${yellow}$(current_user)${reset_color} @ ${purple}\h ${reset_color}in ${green}\w\n${bold_cyan}${green}$(git_prompt_info) ${green}→${reset_color} "
 }
 
 PROMPT_COMMAND=prompt_command;

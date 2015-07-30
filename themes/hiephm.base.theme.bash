@@ -30,3 +30,7 @@ function git_prompt_vars {
   
   #GIT_HASH=$(git rev-parse HEAD 2>/dev/null)
 }
+
+function current_user {
+  echo $(id -un)
+}
