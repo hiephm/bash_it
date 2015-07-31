@@ -22,6 +22,7 @@ alias v="vagrant"
 alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vsus="vagrant suspend"
+alias vst="vagrant global-status"
 
 ### Tool
 alias edit="notepad++.exe"
@@ -34,3 +35,6 @@ alias dev="ssh hiephm@dev"
 alias snkrdev="ssh banksgroupsnkr@ced1.smartosc.com"
 alias snkrtest="ssh banksgroupsnkrtest@ced1.smartosc.com"
 alias jira="ssh root@jira.smartosc.com"
+
+### n98-magerun
+alias mcc="mag cache:clean"
